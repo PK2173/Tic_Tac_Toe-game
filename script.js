@@ -44,7 +44,7 @@ Array.from(boxes).forEach(Element=>{
         if(boxtext.innerText === ""){
             boxtext.innerText = turn
             turn = changeTurn()
-            // gameturn.play();
+            gameturn.play();
             checkWin()
             if(!isgameover){
                 document.getElementsByClassName('info')[0].innerHTML = `Turn for ${turn}`
